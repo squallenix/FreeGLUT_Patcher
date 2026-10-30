@@ -1,0 +1,71 @@
+# ============================================================================
+# .gitignore for FreeGLUT MinGW Patcher
+# ============================================================================
+
+# Compiled executables & build artifacts (test outputs)
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+*.pdb
+
+# Object files & intermediate build files
+*.o
+*.obj
+
+# Code::Blocks temporary & user-specific workspace files
+*.layout
+*.depend
+*.save
+*.save-failed
+*.workspace.layout
+*.cbp.mak
+.objs/
+obj/
+bin/Debug/
+bin/Release/
+
+# VS Code & Visual Studio user settings
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosv
+*.sln.docstates
+
+# Windows OS metadata
+[Dd]esktop.ini
+[Tt]humbs.db
+[Tt]humbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+$RECYCLE.BIN/
+
+# macOS / Linux metadata (if extracted on other systems)
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor swap files
+*~
+*.swp
+*.swo
+*.bak
+
+# Log files
+*.log
+
+# ============================================================================
+# CRITICAL: DO NOT IGNORE PRECOMPILED VENDOR ASSETS IN files/
+# The patcher requires these exact precompiled .a libraries and .dll binaries!
+# ============================================================================
+!files/
+!files/**
+!files/lib/**/*.a
+!files/bin/**/*.dll
+!files/include/**/*.h
